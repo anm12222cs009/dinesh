@@ -1,42 +1,70 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f8ff;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #e0f7fa; /* Light cyan background */
   text-align: center;
   margin: 0;
   padding: 0;
 }
 
 .container {
-  max-width: 400px;
+  max-width: 450px;
   margin: auto;
-  padding: 20px;
-  background: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  background: #ffffff; /* White background for the card */
+  border-radius: 15px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s; /* Smooth scaling effect */
+}
+
+.container:hover {
+  transform: scale(1.02); /* Slightly enlarge on hover */
 }
 
 h1 {
-  color: #333;
+  color: #00796b; /* Teal color for the heading */
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 input {
   width: calc(100% - 20px);
-  padding: 10px;
-  margin-bottom: 10px;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #00796b; /* Teal border */
+  border-radius: 5px;
+  transition: border-color 0.3s; /* Smooth border color transition */
+}
+
+input:focus {
+  border-color: #004d40; /* Darker teal on focus */
+  outline: none; /* Remove default outline */
 }
 
 button {
-  padding: 10px;
-  background-color: #007BFF;
+  padding: 12px;
+  background-color: #009688; /* Teal button */
   color: white;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+button:hover {
+  background-color: #00796b; /* Darker teal on hover */
+  transform: translateY(-2px); /* Slight lift effect */
 }
 
 .weather-info {
-  margin-top: 20px;
+  margin-top: 25px;
+  padding: 15px;
+  background: #f1f8e9; /* Light green background for weather info */
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .weather-info p {
-  margin: 5px;
+  margin: 8px 0;
+  color: #333; /* Dark text for readability */
+  font-size: 16px;
 }
